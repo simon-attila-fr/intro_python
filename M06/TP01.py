@@ -5,7 +5,6 @@ class Range:
         self.__min = 0
         self.__max = 0
         self.__init_range(minimum, maximum)
-        # self.__this_set = {}
 
     def get_min(self):
         return self.__min
@@ -43,6 +42,7 @@ class Range:
 
         self.set_min(new_min)
         self.set_max(new_max)
+        self.__init_range(new_min, new_max)
         return "Range updated successfully"
 
     def __add__(self, other):
@@ -67,9 +67,6 @@ class Range:
         all_range_elements = self.get_range_elements_list() + other.get_range_elements_list()
         union_set = set(all_range_elements)
         return union_set
-
-
-
 
 range1 = Range(5, 9)
 range2 = Range(7, 15)
