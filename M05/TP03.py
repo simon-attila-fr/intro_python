@@ -81,7 +81,7 @@ class Ecosystem:
     # The rule of the ecosystem is that an animal in the center is the prey.
     #  If there is a majority of its predators in the ecosystem, the predator replaces the prey.
     def hunting_turn(self, verbose):
-        print("---------- Avant ----------")
+        print("---------- Before ----------")
         self.print_eco_grid()
         prey = self.get_center_cell().animal
         predator_id = prey.prey_of
@@ -109,7 +109,7 @@ class Ecosystem:
             if verbose : print("There are more preys than predators.")
             if verbose : print("No change in the ecosystem.")
 
-        print("---------- Après ----------")
+        print("---------- After ----------")
         self.print_eco_grid()
 
     def simulation(self, nb_turns):
