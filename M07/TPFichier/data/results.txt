@@ -1,0 +1,10 @@
+Nb totale de pingouins : 344
+Nb individu par espece : {'Adelie': 152, 'Gentoo': 124, 'Chinstrap': 68}
+Nb especes : 3
+Nb individu par île : {'Torgersen': 52, 'Biscoe': 168, 'Dream': 124}
+Nb îles : 3
+Longueur moyenne des becs : 43.9219298245614
+la plus grande profondeur de bec: 21.5
+Nb individu par sex : {'male': 168, 'female': 165, 'NA': 11}
+l’âge du plus jeune pingouin : 17
+l’âge du pingouin le plus âgé : 19
